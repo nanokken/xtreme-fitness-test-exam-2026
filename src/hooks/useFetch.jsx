@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback, useRef } from 'react';
 
 const BASE_URL = 'http://localhost:3042';
 
@@ -6,12 +6,16 @@ export function useFetch(endpoint, options = {}) {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const optionsRef = useRef(options);
+  const hasFetched = useRef(false);
 
-  const { immediate = true, ...fetchOptions } = options;
+  const { immediate = true } = options;
 
   const fetchData = useCallback(async (overrideOptions = {}) => {
     setLoading(true);
     setError(null);
+
+    const { immediate: _, ...fetchOptions } = optionsRef.current;
 
     try {
       const response = await fetch(`${BASE_URL}${endpoint}`, {
@@ -37,10 +41,11 @@ export function useFetch(endpoint, options = {}) {
     } finally {
       setLoading(false);
     }
-  }, [endpoint, fetchOptions]);
+  }, [endpoint]);
 
   useEffect(() => {
-    if (immediate) {
+    if (immediate && !hasFetched.current) {
+      hasFetched.current = true;
       fetchData();
     }
   }, [immediate, fetchData]);
