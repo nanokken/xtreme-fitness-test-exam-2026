@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  /* colors */
+  --color-primary: #F07232;
+  --color-secondary: #e84c3d;
+  --color-tertiary: #f39c12;
+  --color-light: #FFFFFF;
+  --color-dark: #000000;
+
+  /* Breakpoints */
+  --breakpoint-mobile: 360px;
+  --breakpoint-desktop: 1440px;
+  
+  /* Custom fonts */
+  --font-heading: "Montserrat", sans-serif;
+  
+  /* Custom spacing */
+  --spacing-128: 32rem;
+}
+
+/* Custom gradient utility */
+.bg-gradient-brand {
+  background: linear-gradient(to bottom, var(--color-primary), var(--color-secondary));
+}
