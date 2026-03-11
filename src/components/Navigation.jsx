@@ -9,7 +9,6 @@ const navLinks = [
   { to: '/traenere', label: 'Trænere' },
   { to: '/priser', label: 'Priser' },
   { to: '/om-os', label: 'Om os' },
-  { to: '/kontakt', label: 'Kontakt' },
 ];
 
 export default function Navigation() {

@@ -7,7 +7,6 @@ import Subscriptions from "./pages/Subscriptions";
 import BlogDetails from "./pages/BlogDetails";
 import Backoffice from "./pages/Backofffice";
 import About from "./pages/About";
-import Contact from "./pages/Contact";
 import Login from "./pages/Login";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
@@ -24,7 +23,6 @@ export default function App() {
         <Route path="/traenere" element={<Employees />} />
         <Route path="/priser" element={<Subscriptions />} />
         <Route path="/om-os" element={<About />} />
-        <Route path="/kontakt" element={<Contact />} />
         <Route path="/login" element={<Login />} />
         <Route path="/blog/:id" element={<BlogDetails />} />
         <Route 
