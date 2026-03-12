@@ -38,6 +38,7 @@ export default function Navigation() {
             <NavLink
               key={link.to}
               to={link.to}
+              onClick={window.scrollTo({ top: 0, behavior: 'smooth' })}
               className={({ isActive }) =>
                 `text-white hover:text-primary transition-colors ${
                   isActive ? 'text-primary' : ''
@@ -122,7 +123,10 @@ export default function Navigation() {
               <NavLink
                 key={link.to}
                 to={link.to}
-                onClick={() => setIsOpen(false)}
+                onClick={() => {
+                  setIsOpen(false);
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }}
                 className={({ isActive }) =>
                   `text-white text-xl hover:text-primary transition-colors ${
                     isActive ? 'text-primary' : ''
