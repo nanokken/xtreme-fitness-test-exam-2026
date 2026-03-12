@@ -25,7 +25,7 @@ export default function Navigation() {
   return (
     <>
       {/* Desktop Navigation */}
-      <nav className="hidden desktop:flex absolute top-0 left-0 right-0 z-50 bg-transparent px-8 py-4 items-center justify-between">
+      <nav className="hidden desktop:flex fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-sm px-8 py-4 items-center justify-between">
         <Link to="/" className="flex items-center gap-2">
           <img src={logo} alt="Xtreme Fitness" className="h-12" />
           <span className="text-white font-bold text-sm uppercase tracking-wider">
