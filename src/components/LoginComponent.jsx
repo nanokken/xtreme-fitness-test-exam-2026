@@ -31,14 +31,17 @@ export default function LoginComponent() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-[60vh] py-12 px-4">
+    <div className="flex flex-col items-center justify-center py-16 px-4 bg-white">
+      {/* Blue line decoration */}
+      <div className="w-24 h-1 bg-blue-500 mb-10"></div>
+      
       {/* Header text */}
       <h2 className="text-primary font-heading text-sm md:text-base tracking-[0.3em] uppercase mb-6 text-center">
         Log ind for at tilmelde dig dagens træning
       </h2>
       
       {/* Main title */}
-      <h1 className="text-3xl md:text-4xl font-bold uppercase mb-10">
+      <h1 className="text-3xl md:text-4xl font-bold uppercase mb-10 text-dark">
         Log ind
       </h1>
 
