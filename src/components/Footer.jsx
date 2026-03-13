@@ -41,7 +41,7 @@ export default function Footer() {
           <div className="flex flex-col items-start">
             <Link to="/" className="flex items-center gap-3 mb-4">
               <img src={logo} alt="Xtreme Fitness" className="h-12" />
-              <span className="text-white font-bold text-lg uppercase tracking-wider">
+              <span className="text-white font-bold text-lg uppercase tracking-wider font-heading">
                 Xtreme Fitness
               </span>
             </Link>
@@ -52,7 +52,7 @@ export default function Footer() {
 
           {/* Center - Navigation */}
           <div className="flex flex-col items-center">
-            <h3 className="text-white font-bold text-lg uppercase tracking-wider mb-4">
+            <h3 className="text-white font-bold text-lg uppercase tracking-wider mb-4 font-heading">
               Navigation
             </h3>
             <nav className="flex flex-col items-center gap-2">
@@ -70,7 +70,7 @@ export default function Footer() {
 
           {/* Right - Contact & Social */}
           <div className="flex flex-col items-end">
-            <h3 className="text-white font-bold text-lg uppercase tracking-wider mb-4">
+            <h3 className="text-white font-bold text-lg uppercase tracking-wider mb-4 font-heading">
               Kontakt os
             </h3>
             <div className="text-white/80 text-sm text-right space-y-1 mb-6">
@@ -102,7 +102,7 @@ export default function Footer() {
           {/* Logo */}
           <Link to="/" className="flex flex-col items-center gap-2 mb-4">
             <img src={logo} alt="Xtreme Fitness" className="h-16" />
-            <span className="text-white font-bold uppercase tracking-wider text-lg">
+            <span className="text-white font-bold uppercase tracking-wider text-lg font-heading">
               Xtreme Fitness
             </span>
           </Link>
@@ -128,7 +128,7 @@ export default function Footer() {
           </div>
 
           {/* Kontakt Os */}
-          <h3 className="text-white font-bold text-xl uppercase tracking-wider mb-6">
+          <h3 className="text-white font-bold text-xl uppercase tracking-wider mb-6 font-heading">
             Kontakt os
           </h3>
 

@@ -28,7 +28,7 @@ export default function ServiceCards() {
     <section>
       {/* Header with gradient background */}
       <div className="bg-gradient-brand pt-16 pb-48 px-6 text-center text-white">
-        <p className="text-xs md:text-sm tracking-[0.3em] uppercase mb-4">
+        <p className="text-xs md:text-sm tracking-[0.3em] uppercase mb-4 font-heading">
           Vores Tjenester
         </p>
         <h2 className="font-heading font-black text-2xl md:text-4xl uppercase leading-tight max-w-xl mx-auto">

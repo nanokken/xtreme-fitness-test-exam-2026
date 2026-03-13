@@ -53,8 +53,8 @@ export default function Exercises() {
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-12">
-          <p className="text-primary tracking-[0.2em] text-sm mb-3">DETTE TILBYDER VI</p>
-          <h2 className="text-3xl md:text-4xl font-black text-dark">
+          <p className="text-primary tracking-[0.2em] text-sm mb-3 font-heading">DETTE TILBYDER VI</p>
+          <h2 className="text-3xl md:text-4xl font-black text-dark font-heading">
             VI TILBYDER EKSKLUSIVE ØVELSER
           </h2>
         </div>
@@ -84,7 +84,7 @@ export default function Exercises() {
                   </div>
                   
                   {/* Title */}
-                  <h3 className="text-xl font-black text-dark mb-4 tracking-wide">
+                  <h3 className="text-xl font-black text-dark mb-4 tracking-wide font-heading">
                     {exercise.title}
                   </h3>
                   

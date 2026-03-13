@@ -13,7 +13,8 @@
   --breakpoint-desktop: 1440px;
   
   /* Custom fonts */
-  --font-heading: "Montserrat", sans-serif;
+  --font-heading: "Teko", sans-serif;
+  --font-sans: "Ubuntu", sans-serif;
   
   /* Custom spacing */
   --spacing-128: 32rem;

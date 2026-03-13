@@ -41,7 +41,7 @@ export default function LoginComponent() {
       </h2>
       
       {/* Main title */}
-      <h1 className="text-3xl md:text-4xl font-bold uppercase mb-10 text-dark">
+      <h1 className="text-3xl md:text-4xl font-bold uppercase mb-10 text-dark font-heading">
         Log ind
       </h1>
 

@@ -14,14 +14,14 @@ function SubscriptionCard({ subscription }) {
         />
         {/* Price circle - always centered at bottom */}
         <div className="absolute left-1/2 -translate-x-1/2 -bottom-14 w-28 h-28 rounded-full bg-gradient-brand flex flex-col items-center justify-center text-white shadow-lg">
-          <span className="text-2xl font-bold leading-tight">{price} DKK</span>
+          <span className="text-2xl font-bold leading-tight font-heading">{price} DKK</span>
           <span className="text-sm italic">Mdr</span>
         </div>
       </div>
 
       {/* Content */}
       <div className="pt-20 pb-8 px-6 flex flex-col items-center text-center">
-        <h3 className="text-2xl font-bold text-gray-900 uppercase tracking-wide mb-6">
+        <h3 className="text-2xl font-bold text-gray-900 uppercase tracking-wide mb-6 font-heading">
           {title}
         </h3>
 

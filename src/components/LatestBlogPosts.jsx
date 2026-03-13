@@ -62,7 +62,7 @@ const LatestBlogPosts = () => {
                   />
                   {/* Date badge */}
                   <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2">
-                    <div className="bg-primary text-light rounded-full w-16 h-16 flex flex-col items-center justify-center">
+                    <div className="bg-primary text-light rounded-full w-16 h-16 flex flex-col items-center justify-center font-heading">
                       <span className="text-xl font-bold leading-none">{day}</span>
                       <span className="text-xs">{month}</span>
                     </div>

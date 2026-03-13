@@ -24,13 +24,13 @@ export default function HeroSection() {
           {/* Subtitle with left border */}
           <div className="flex items-center justify-center md:justify-start gap-3 mb-4">
             <div className="hidden md:block w-1 h-16 bg-white"></div>
-            <h2 className="text-white text-lg md:text-xl tracking-[0.3em] font-light">
+            <h2 className="text-white text-lg md:text-xl tracking-[0.3em] font-light font-heading">
               XTREME FITNESS
             </h2>
           </div>
 
           {/* Main Headline */}
-          <h1 className="text-white text-5xl md:text-6xl lg:text-7xl font-black mb-6 leading-tight">
+          <h1 className="text-white text-5xl md:text-6xl lg:text-7xl font-black mb-6 leading-tight font-heading">
             BLIV STÆRK
           </h1>
 
