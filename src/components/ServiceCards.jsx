@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { useFetch } from '../hooks/useFetch';
 
 const BASE_URL = 'http://localhost:3042';
@@ -24,9 +25,21 @@ export default function ServiceCards() {
   const services = data?.data || [];
 
   return (
-    <section className="py-12 px-4">
-      {/* Desktop Layout - 2x2 Grid */}
-      <div className="hidden desktop:grid desktop:grid-cols-2 gap-1 max-w-6xl mx-auto">
+    <section>
+      {/* Header with gradient background */}
+      <div className="bg-gradient-brand pt-16 pb-48 px-6 text-center text-white">
+        <p className="text-xs md:text-sm tracking-[0.3em] uppercase mb-4">
+          Vores Tjenester
+        </p>
+        <h2 className="font-heading font-black text-2xl md:text-4xl uppercase leading-tight max-w-xl mx-auto">
+          Løsninger til at bevæge sig bedre og føle sig sundere
+        </h2>
+      </div>
+
+      {/* Cards container - pulled up to overlap gradient */}
+      <div className="px-4 -mt-36">
+        {/* Desktop Layout - 2x2 Grid */}
+        <div className="hidden desktop:grid desktop:grid-cols-2 gap-1 max-w-6xl mx-auto">
         {services.slice(0, 4).map((service) => (
           <div
             key={service._id}
@@ -100,6 +113,22 @@ export default function ServiceCards() {
             </div>
           </div>
         ))}
+      </div>
+      </div>
+
+      {/* CTA Button */}
+      <div className="flex justify-center py-10">
+        <Link
+          to="/subscriptions"
+          className="inline-flex items-center gap-4 bg-white/10 backdrop-blur-sm border border-primary/30 rounded-full px-6 py-3 text-primary hover:bg-primary/10 transition-all group"
+        >
+          <span className="text-base font-medium">Tilmeld dig nu</span>
+          <span className="w-10 h-10 bg-primary rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+            <svg className="w-4 h-4 text-white ml-0.5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M8 5v14l11-7z"/>
+            </svg>
+          </span>
+        </Link>
       </div>
     </section>
   );
